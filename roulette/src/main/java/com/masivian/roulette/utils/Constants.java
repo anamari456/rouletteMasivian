@@ -1,5 +1,5 @@
 package com.masivian.roulette.utils;
-public class Const {
+public class Constants {
     public static final String PARAMETER_ROULETTE_ID = "rouletteId";
     public static final String PARAMETER_CUSTOMER_ID = "customerId";
     public static final String PARAMETER_BET_VALUE = "betValue";

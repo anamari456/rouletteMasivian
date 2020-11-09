@@ -21,6 +21,7 @@ public class Customer implements Serializable {
         return id;
     }
     public static Customer createCustomer(String name, Long creditAmount){
+        
         return new Customer(name, creditAmount);
     }
     public String getName() {

@@ -22,6 +22,7 @@ public class Roulette implements Serializable {
         this.roluletteState = roluletteState;
     }
     public static Roulette createInitialRoulette(){
+        
         return new Roulette(RouletteState.CREATED);
     }
     public Long getId() {

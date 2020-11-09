@@ -33,9 +33,11 @@ public class Bet implements Serializable {
         this.customer = customer;
     }
     public static Bet createBetNumber(Roulette roulette, Customer customer, Integer number, Integer betValue){
+        
         return new Bet(roulette, customer, number, RouletteColorCalculator.calculate(number), betValue);
     }
     public static Bet createBetColor(Roulette roulette, Customer customer, BetColor betColor, Integer betValue){
+        
         return new Bet(roulette, customer, null, betColor, betValue);
     }
     public Long getId() {
