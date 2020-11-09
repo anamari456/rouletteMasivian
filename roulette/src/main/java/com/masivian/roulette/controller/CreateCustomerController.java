@@ -16,7 +16,8 @@ public class CreateCustomerController {
     @GetMapping(value="/create")
     public @ResponseBody Customer create(@RequestParam(required = true, name = Constants.PARAMETER_CUSTOMER_NAME) String name,
             @RequestParam(required = true, name = Constants.PARAMETER_CREDIT_AMOUNT) Long creditAmount){
+        Customer customer = Customer.createCustomer(name, creditAmount);
         
-        return createCustomerService.create(name, creditAmount);
+        return createCustomerService.create(customer);
     }
 }

@@ -7,8 +7,7 @@ import org.springframework.stereotype.Service;
 public class CreateCustomerService {
     @Autowired
     private CustomerRepository customerRepository;
-    public Customer create(String name,Long creditAmount){
-        Customer customer = Customer.createCustomer(name, creditAmount);
+    public Customer create(Customer customer){
         customerRepository.save(customer);
         
         return customer;
